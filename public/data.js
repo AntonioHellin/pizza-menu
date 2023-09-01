@@ -1,6 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
 const pizzaData = [
   {
     name: "Focaccia",
@@ -45,31 +42,3 @@ const pizzaData = [
     soldOut: false,
   },
 ];
-
-function App() {
-  return (
-    <div>
-      <h1>Hello React dev branch!</h1>
-      <Pizza />
-      <Pizza />
-      <Pizza />
-    </div>
-  )
-}
-
-function Pizza(){
-  return (
-    <h1>Component Pizza</h1>
-  )
-}
-
-// React v18
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// // React before v18
-// React.render(<App />);
