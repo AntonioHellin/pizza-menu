@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import './index.css'
+import "./index.css";
 
 const pizzaData = [
   {
@@ -50,58 +50,68 @@ const pizzaData = [
 function App() {
   return (
     <div className="container">
-      <Header/>
+      <Header />
       <Menu />
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-function Header() 
-{
+function Header() {
   // const style = {color : 'red', fontSize: '50px', textTransform:'uppercase'}
-  const style = {}
+  const style = {};
   return (
     <header className="header">
-      <h1 style={style} >Fast React Pizza Co.</h1>
+      <h1 style={style}>Fast React Pizza Co.</h1>
     </header>
   );
 }
 
-function Menu() 
-{
+function Menu() {
   return (
     <main className="menu">
       <h2>Our menu</h2>
-      <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Pizza
+        name="Pizza Spinaci"
+        ingredient="Tomato, mozarella, spinach, and ricotta cheese"
+        photoName="pizzas/spinaci.jpg"
+        price={10}
+      />
+      <Pizza
+        name="Pizza Funghi"
+        ingredient="Tomato, mushrooms"
+        price={12}
+        photoName="pizzas/funghi.jpg"
+      />
     </main>
-  )
+  );
 }
 
-function Footer() 
-{
+function Pizza(props) {
+  return (
+    <div className="pizza">
+      <img src={props.photoName} alt={props.name} />
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredients}</p>
+        <span>{props.price}</span>
+      </div>
+    </div>
+  );
+}
+
+function Footer() {
   const hour = new Date().getHours();
   const openHour = 12;
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
-  
-  return (
-    <footer className="footer">{new Date().toLocaleDateString()}. We are currently open.</footer>
-    );
-}
+  console.log(isOpen);
 
-function Pizza()
-{
   return (
-    <div>
-      <img src="pizzas/focaccia.jpg"></img>
-      <h3>Focaccia</h3>
-      <p>Bread with italian olive oil and rosemary</p>
-    </div>
-  )
+    <footer className="footer">
+      {new Date().toLocaleDateString()}. We are currently open.
+    </footer>
+  );
 }
 
 // React v18
