@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import './index.css'
 
 const pizzaData = [
   {
@@ -48,7 +49,7 @@ const pizzaData = [
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header/>
       <Menu />
       <Footer/>
@@ -58,36 +59,46 @@ function App() {
 
 function Header() 
 {
-  return <h1>Fast React Pizza Co.</h1>
+  // const style = {color : 'red', fontSize: '50px', textTransform:'uppercase'}
+  const style = {}
+  return (
+    <header className="header">
+      <h1 style={style} >Fast React Pizza Co.</h1>
+    </header>
+  );
 }
 
 function Menu() 
 {
-  return 
-  (
-    <div>
+  return (
+    <main className="menu">
       <h2>Our menu</h2>
       <Pizza />
       <Pizza />
       <Pizza />
       <Pizza />
-    </div>
-  );
+    </main>
+  )
 }
 
 function Footer() 
 {
+  const hour = new Date().getHours();
+  const openHour = 12;
+  const closeHour = 22;
+  const isOpen = hour >= openHour && hour <= closeHour;
+  
   return (
-    <footer>{new Date().toLocaleDateString()}. We are currently open.</footer>
+    <footer className="footer">{new Date().toLocaleDateString()}. We are currently open.</footer>
     );
-  //return React.createElement('footer', null, "We are currently open.")
 }
 
-function Pizza(){
+function Pizza()
+{
   return (
     <div>
       <img src="pizzas/focaccia.jpg"></img>
-      <h2>Focaccia</h2>
+      <h3>Focaccia</h3>
       <p>Bread with italian olive oil and rosemary</p>
     </div>
   )
