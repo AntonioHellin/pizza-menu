@@ -50,9 +50,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <Menu />
       <Footer/>
     </div>
   )
@@ -65,7 +63,16 @@ function Header()
 
 function Menu() 
 {
-  
+  return 
+  (
+    <div>
+      <h2>Our menu</h2>
+      <Pizza />
+      <Pizza />
+      <Pizza />
+      <Pizza />
+    </div>
+  );
 }
 
 function Footer() 
