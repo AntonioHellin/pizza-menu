@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### COMPONENTS
+
+- React applications are entirely made out of components
+- Building blocks of user interfaces in React
+- Piece of UI that has its own data, logic and appearance
+- We build complex UIs by building multiple components and combining them
+- Components can be reused, nested inside each other and pass data between them
+
+### WHAT IS JSX?
+
+- Declarative syntax to describe what components looks like and how they work
+- Components must return a block of JSX
+- Extension of JavaScript that allows us to embed JavaScript, CSS and React components into HTML
+- Each JSX element is converted to a React.createElement function call
+- JSX is declarative:
+  -> Imperative (javascript):
+  - Manual DOM element selections and DOM traversing
+  - Step by step DOM mutations until we reach the desired UI
+    -> Declarative (React):
+  - Describe what UI should look like using JSX, based on current data
+  - React is an abstraction away from DOM: we never touch the DOM
+  - Instead, we thing of the UI as a reflection of the current data
