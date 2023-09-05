@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+//import pizzaData from "./data.js";
 
 const pizzaData = [
   {
@@ -96,16 +97,13 @@ function Menu() {
 }
 
 function Pizza({ pizzaObj }) {
-  console.log(pizzaObj);
-  if (pizzaObj.soldOut) return null;
-
   return (
-    <li className="pizza">
+    <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
       <img src={pizzaObj.photoName} alt={pizzaObj.name} />
       <div>
         <h3>{pizzaObj.name}</h3>
         <p>{pizzaObj.ingredients}</p>
-        <span>{pizzaObj.price}</span>
+        <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
       </div>
     </li>
   );
@@ -116,10 +114,6 @@ function Footer() {
   const openHour = 12;
   const closeHour = 22;
   const isOpen = hour >= openHour && hour <= closeHour;
-
-  // if (!isOpen) {
-  //   return <p>CLOSED.</p>;
-  // }
 
   return (
     <footer className="footer">
@@ -153,6 +147,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// // React before v18
-// React.render(<App />);
