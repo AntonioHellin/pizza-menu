@@ -1,110 +1,110 @@
 {
-    "python.condaPath": "C:\\Users\\ahell\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.8",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "explorer.confirmDelete": false,
-    "python.languageServer": "Pylance",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "explorer.confirmDragAndDrop": false,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "liveServer.settings.donotVerifyTags": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.wordWrap": "on",
+  "python.condaPath": "C:\\Users\\ahell\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Python 3.8",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "explorer.confirmDelete": false,
+  "python.languageServer": "Pylance",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.donotVerifyTags": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "todohighlight.keywords": [
+    {
+      "text": "BUG",
+      "color": "#333",
+      "backgroundColor": "#e74c3c"
+    },
+    {
+      "text": "FIXME",
+      "color": "#333",
+      "backgroundColor": "#e67e22"
+    },
+    {
+      "text": "TODO",
+      "color": "#333",
+      "backgroundColor": "#2ecc71"
+    }
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "vsicons.dontShowNewVersionMessage": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "gitlens.defaultDateFormat": null,
+  "gitlens.defaultTimeFormat": null,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.profiles.windows": {
+    "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": []
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "tmux",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash"
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    },
+    "zsh (2)": {
+      "path": "/usr/bin/zsh"
+    }
+  },
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.fontFamily": "monospace",
+  "workbench.preferredDarkColorTheme": "Monokai Pro",
+  "workbench.preferredHighContrastColorTheme": "Monokai Pro",
+  "workbench.preferredLightColorTheme": "Monokai Pro",
+  "workbench.colorTheme": "Default Dark Modern",
+  "cSpell.userWords": [
+    "cupertino",
+    "Hell",
+    "Hellín",
+    "latlng",
+    "n",
+    "scrolltop"
+  ],
+  "vscode-edge-devtools.headless": true,
+  "C_Cpp.updateChannel": "Insiders",
+  "code-runner.runInTerminal": true,
+  "vscode-edge-devtools.mirrorEdits": true,
+  "kite.showWelcomeNotificationOnStartup": false,
+  "[dart]": {
     "editor.formatOnSave": true,
-    "todohighlight.keywords": [
-      {
-        "text": "BUG",
-        "color": "#333",
-        "backgroundColor": "#e74c3c"
-      },
-      {
-        "text": "FIXME",
-        "color": "#333",
-        "backgroundColor": "#e67e22"
-      },
-      {
-        "text": "TODO",
-        "color": "#333",
-        "backgroundColor": "#2ecc71"
-      }
-    ],
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "vsicons.dontShowNewVersionMessage": true,
-    "workbench.editorAssociations": {
-      "*.ipynb": "jupyter.notebook.ipynb"
-    },
-    "gitlens.defaultDateFormat": null,
-    "gitlens.defaultTimeFormat": null,
-    "security.workspace.trust.untrustedFiles": "open",
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "terminal.integrated.profiles.windows": {
-      "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
-        "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-        "args": []
-      }
-    },
-    "terminal.integrated.defaultProfile.linux": "tmux",
-    "terminal.integrated.profiles.linux": {
-      "bash": {
-        "path": "bash"
-      },
-      "zsh": {
-        "path": "zsh"
-      },
-      "fish": {
-        "path": "fish"
-      },
-      "tmux": {
-        "path": "tmux",
-        "icon": "terminal-tmux"
-      },
-      "pwsh": {
-        "path": "pwsh",
-        "icon": "terminal-powershell"
-      },
-      "zsh (2)": {
-        "path": "/usr/bin/zsh"
-      }
-    },
-    "extensions.ignoreRecommendations": true,
-    "terminal.integrated.fontFamily": "DroidSansMono Nerd Font",
-    "workbench.preferredDarkColorTheme": "Monokai Pro",
-    "workbench.preferredHighContrastColorTheme": "Monokai Pro",
-    "workbench.preferredLightColorTheme": "Monokai Pro",
-    "workbench.colorTheme": "Default Dark Modern",
-    "cSpell.userWords": [
-      "cupertino",
-      "Hell",
-      "Hellín",
-      "latlng",
-      "n",
-      "scrolltop"
-    ],
-    "vscode-edge-devtools.headless": true,
-    "C_Cpp.updateChannel": "Insiders",
-    "code-runner.runInTerminal": true,
-    "vscode-edge-devtools.mirrorEdits": true,
-    "kite.showWelcomeNotificationOnStartup": false,
-    "[dart]": {
-      "editor.formatOnSave": true,
-      "editor.formatOnType": true,
-      "editor.rulers": [80],
-      "editor.selectionHighlight": false,
-      "editor.suggest.snippetsPreventQuickSuggestions": false,
-      "editor.suggestSelection": "first",
-      "editor.tabCompletion": "onlySnippets",
-      "editor.wordBasedSuggestions": false
-    },
-    "githubPullRequests.createOnPublishBranch": "never",
-    "editor.accessibilitySupport": "off",
-    "workbench.editor.untitled.hint": "hidden",
-    "[python]": {
-      "editor.formatOnType": true
-    },
-    "files.autoSave": "onFocusChange",
-    "eslint.run": "onSave",
-    "terminal.integrated.localEchoStyle": "dim",
-    "svg.minify.cleanupAttrs": false
-  }
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "githubPullRequests.createOnPublishBranch": "never",
+  "editor.accessibilitySupport": "off",
+  "workbench.editor.untitled.hint": "hidden",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "files.autoSave": "onFocusChange",
+  "eslint.run": "onSave",
+  "terminal.integrated.localEchoStyle": "dim",
+  "svg.minify.cleanupAttrs": false
+}
