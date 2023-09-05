@@ -1,6 +1,6 @@
 # Getting Started with React
 
-### COMPONENTS
+## COMPONENTS
 
 - React applications are entirely made out of components
 - Building blocks of user interfaces in React
@@ -8,7 +8,7 @@
 - We build complex UIs by building multiple components and combining them
 - Components can be reused, nested inside each other and pass data between them
 
-### WHAT IS JSX?
+## WHAT IS JSX?
 
 - Declarative syntax to describe what components looks like and how they work
 - Components must return a block of JSX
@@ -23,13 +23,13 @@
   - React is an abstraction away from DOM: we never touch the DOM
   - Instead, we thing of the UI as a reflection of the current data
 
-# PROPS
+## PROPS
 
 - Props are used to pass data from parent components to child components (down the component tree)
 - Essential tool to configure and customize components (like function parameters)
 - With props, parent components control how child components look and work
 
-# GENERAL JSX RULES
+## GENERAL JSX RULES
 
 - JSX works essentially like HTML, but we can enter "JavaScript mode" by using {}
 - We can place JavaScript expressions inside {}
